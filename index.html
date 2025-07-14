@@ -3,60 +3,99 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>FuelAxis - Global Fuel Brokerage</title>
+  <title>FuelAxis – Global Diesel Brokerage</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Roboto&display=swap" rel="stylesheet">
   <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      font-family: Arial, sans-serif;
-      margin: 0; padding: 0;
-      background: #f9f9f9; color: #333;
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(120deg, #0f0f0f, #1a1a1a);
+      color: #fff;
+      line-height: 1.6;
     }
     header {
-      background-color: #101820;
-      color: #fff;
-      padding: 40px 20px;
+      padding: 100px 20px;
       text-align: center;
+      background: linear-gradient(145deg, #0d0d0d, #1e1e1e);
     }
     header h1 {
-      margin: 0; font-size: 2.5em;
+      font-family: 'Orbitron', sans-serif;
+      font-size: 3em;
+      color: #ffcc00;
+      animation: fadeIn 2s ease-in-out;
     }
     header p {
-      margin-top: 10px;
-      font-size: 1.1em;
-    }
-    section {
-      padding: 40px 20px;
-      max-width: 900px;
-      margin: auto;
-    }
-    h2 {
-      color: #101820;
-      margin-bottom: 15px;
-    }
-    ul {
-      padding-left: 20px;
+      font-size: 1.2em;
+      margin-top: 15px;
+      color: #ccc;
     }
     .cta {
-      text-align: center;
-      margin: 40px 0;
+      margin-top: 30px;
     }
     .cta a {
-      background: #ff9900;
-      color: #fff;
-      padding: 12px 25px;
       text-decoration: none;
+      background: #ff9900;
+      padding: 15px 30px;
+      color: #fff;
       font-weight: bold;
-      border-radius: 5px;
+      border-radius: 8px;
+      transition: 0.3s ease;
+    }
+    .cta a:hover {
+      background: #ffaa00;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 30px;
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 25px;
+      border-radius: 12px;
+      border: 1px solid #333;
+      text-align: center;
+      backdrop-filter: blur(5px);
+    }
+    .card h3 {
+      color: #ffcc00;
+      margin-bottom: 10px;
+    }
+    .card p {
+      color: #aaa;
+      font-size: 0.95em;
     }
     footer {
-      background-color: #101820;
-      color: #fff;
       text-align: center;
       padding: 20px;
+      background: #111;
       font-size: 0.9em;
+      color: #666;
     }
-    .contact {
-      margin-top: 20px;
-      line-height: 1.6;
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25D366;
+      color: white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+      text-decoration: none;
+      box-shadow: 0 0 15px #25D366;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
@@ -64,41 +103,46 @@
 
 <header>
   <h1>FuelAxis</h1>
-  <p>Your Trusted Partner for Global Diesel Fuel Brokering (EN590)</p>
+  <p>Fueling Global Diesel Trade with Verified CIF & FOB Deals</p>
+  <div class="cta">
+    <a href="https://wa.me/919970403835" target="_blank">🔥 Get Live Offers on WhatsApp</a>
+  </div>
 </header>
 
 <section>
-  <h2>About Us</h2>
-  <p>FuelAxis connects reliable fuel buyers and sellers across the globe with a sharp focus on EN590 diesel. We provide transparent, verified, and secure brokering services that streamline large-scale fuel trade operations, ensuring trust and delivery every step of the way.</p>
-</section>
-
-<section>
-  <h2>Our Services</h2>
-  <ul>
-    <li>EN590 Diesel Fuel Brokering</li>
-    <li>Global Buyer-Seller Matchmaking</li>
-    <li>Document Verification & KYC Checks</li>
-    <li>Facilitation of Secure Transactions</li>
-  </ul>
-</section>
-
-<section class="cta">
-  <a href="https://wa.me/919970403835" target="_blank">📞 Contact Us on WhatsApp</a>
-</section>
-
-<section>
-  <h2>Contact Details</h2>
-  <div class="contact">
-    📍 Based in Pune Maharashtra, India<br />
-    📧 Email: fuelaxis.global@gmail.com<br />
-    ☎️ Phone: +91 9970403835<br />
-    🌐 Domain: www.fuelaxis.in
+  <h2 style="text-align:center; margin-bottom:40px; color:#ffcc00;">Our Core Services</h2>
+  <div class="features">
+    <div class="card">
+      <h3>EN590 Diesel Brokering</h3>
+      <p>Connecting verified buyers & sellers worldwide with high-volume EN590 deals.</p>
+    </div>
+    <div class="card">
+      <h3>Document Verification</h3>
+      <p>KYC, LOI, ICPO, POP – we streamline paperwork and verify before engagement.</p>
+    </div>
+    <div class="card">
+      <h3>Deal Facilitation</h3>
+      <p>Full-cycle support: pricing, negotiations, SPA coordination & secure closure.</p>
+    </div>
+    <div class="card">
+      <h3>Global Matchmaking</h3>
+      <p>Tap into our network of refineries, resellers, mandates & corporate buyers.</p>
+    </div>
   </div>
 </section>
 
+<section style="text-align:center; padding-top: 0;">
+  <h2 style="color:#ffcc00;">Why FuelAxis?</h2>
+  <p style="max-width:700px; margin: 20px auto; color:#aaa;">
+    We don’t deal in hope. We deal in confirmed cargos, real buyers, and trust-backed execution. Whether you're a first-time importer or a billion-liter mover — FuelAxis is your silent, powerful backend for success.
+  </p>
+</section>
+
 <footer>
-  &copy; 2025 FuelAxis Global Pvt. Ltd. | All rights reserved
+  &copy; 2025 FuelAxis Pvt. Ltd. | All Rights Reserved
 </footer>
+
+<a class="whatsapp-float" href="https://wa.me/919970403835" target="_blank">📲</a>
 
 </body>
 </html>
